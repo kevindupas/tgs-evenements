@@ -17,7 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('color');
-            $table->json('meta_data')->nullable();
+            // $table->string('meta_data')->nullable();
             $table->timestamps();
         });
     }

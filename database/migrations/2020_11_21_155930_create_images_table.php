@@ -18,7 +18,7 @@ class CreateImagesTable extends Migration
             $table->string('title');
             $table->string('url');
             $table->boolean('featured')->default(0);
-            // $table->json('meta_data')->nullable();
+            $table->json('meta_data')->nullable();
             $table->bigInteger('post_id');
             $table->timestamps();
         });

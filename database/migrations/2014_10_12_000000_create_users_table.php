@@ -19,11 +19,11 @@ class CreateUsersTable extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email')->unique();
-            // $table->json('liked_posts')->nullable();
-            // $table->json('disliked_posts')->nullable();
-            // $table->json('favourite_posts')->nullable();
-            // $table->json('favourite_categories')->nullable();
-            // $table->json('preferences')->nullable();
+            $table->json('liked_posts')->nullable();
+            $table->json('disliked_posts')->nullable();
+            $table->json('favourite_posts')->nullable();
+            $table->json('favourite_categories')->nullable();
+            $table->json('preferences')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
